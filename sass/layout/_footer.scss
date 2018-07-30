@@ -1,0 +1,15 @@
+.footer {
+  padding: 15rem 0rem;
+  background: $color-primary;
+
+  &__logo-container {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__logo {
+    height: 80px;
+    width: 80px;
+    margin: 0 auto;
+  }
+}

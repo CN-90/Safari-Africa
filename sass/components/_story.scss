@@ -1,0 +1,58 @@
+.story {
+  width: 50%;
+  box-shadow: 0 1.3rem 7rem rgb(99, 85, 7);
+  font-size: 1.8rem;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 7rem;
+  margin-bottom: 10rem;
+  background: #141414e7;
+  color: #ffffff;
+  padding: 5rem;
+  transform: skewX(-12deg);
+
+  & > * {
+    transform: skewX(12deg);
+  }
+
+  &__text {
+    margin-left: 5rem;
+    margin-top: 1rem;
+  }
+
+  &__img-container {
+    min-height: 131px;
+    min-width: 133px;
+    max-height: 132px;
+    max-width: 104px;
+    border-radius: 50%;
+    border: 2px solid rgb(228, 206, 15);
+    
+
+    &.one {
+      background-image: url('../../img/review-img.jpeg');
+      background-size: 100% 100%;
+    }
+
+    &.two {
+      background-image: url('../../img/review-three.jpg');
+      background-size: 100% 100%;
+    }
+
+    &.three {
+      background-image: url('../../img/review-two.jpg');
+      background-size: 100% 100%;
+    }
+
+    &:hover {
+      transform: skewX(12deg) scale(1.1);
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    // border: 3px solid rgb(255, 217, 0);
+  }
+}

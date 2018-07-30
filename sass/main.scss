@@ -1,0 +1,152 @@
+@import 'partials/animations';
+@import 'partials/variables';
+@import 'partials/utils';
+@import './layout/header';
+@import './layout/about';
+@import './layout/tours';
+@import './layout/testimonials';
+@import './layout/booking';
+@import './layout/footer';
+@import './components/buttons';
+@import './components/card';
+@import './components/story';
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Lato", "sans-serif";
+  font-weight: 500;
+  line-height: 1.7;
+  padding: 30px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  
+}
+
+@media (max-width: 900px) { 
+  html {
+    font-size: 37%;
+  }
+
+  body {
+    padding: 0px;
+  }
+
+  .header {
+
+    .border-btn {
+      margin: 0 auto;
+      width: 100%;
+    }
+
+  }
+
+  .about {
+    
+    &__imgs-container {
+      margin-bottom: 7rem;
+    }
+
+    &__s-img-container {
+      height: auto;
+    }
+  }
+
+  .card {
+    width: 225px;
+  }
+
+  .card__side {
+    height: 370px;
+    width: 225px;
+  }
+
+  .testimonials {
+
+    .story {
+      flex-direction: column;
+      transform: skewX(0deg);
+      width: 65%;
+
+      & > * {
+        transform: skewX(0deg);
+      }
+
+      &__text {
+        margin-left: 0rem;
+        text-align: center;
+      }
+
+
+      &__img-container {
+        margin: 0 auto;
+        min-height: 104px;
+        min-width: 110px;
+      }
+    }
+  }
+  
+
+  .large-image {
+    height: 250px;
+  }
+
+  .header-primary {
+    width: 80%;
+    text-align: center;
+    display: block;
+    padding-left: 2%;
+    margin: 0 auto;
+
+    &--secondary {
+      left: 0rem;
+      letter-spacing: 2px;
+    }
+  }
+
+  .header-secondary {
+    margin-top: 10rem;
+  }
+
+  .header-tertiary {
+    margin-top: 3rem;
+  }
+
+  .sub--heading--text {
+    width: 100%;
+  }
+
+  .flex-row-4 {
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+
+    .col {
+      margin: 0 auto;
+    }
+  }
+    
+  .flex-row-6 {
+    flex-direction: column-reverse;
+    width: 80%;
+
+    .col {
+      max-width: 100%;
+    }
+  }
+ }
+
+

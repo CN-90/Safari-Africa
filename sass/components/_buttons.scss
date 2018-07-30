@@ -1,0 +1,88 @@
+.btn-wrapper {
+  margin: 0 auto;
+  text-align: center;
+  animation: moveInUp 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  width: 100%;
+}
+  
+.border-btn {
+  padding: 20px;
+  width: 350px;
+  background: linear-gradient(to left, rgba(247, 0, 0, 0) 50%, $color-primary 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 1s ease;
+  color: #fff;
+  font-size: 1.5rem;
+  border: 2px solid $color-primary;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  display: block;
+
+  &:hover {
+    background-position: left bottom;
+    color: #080808;
+    // transform: translateX(10px);
+  }
+}
+
+.black-btn {
+  padding: 5px;
+  width: 90%;
+  color: gold;
+  background: #141414;
+  font-size: 1.5rem;
+  border: 2px solid $color-primary;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  margin-top: 5rem;
+  border-radius: 5px;
+
+  &:hover {
+    animation: jump 1s linear;
+  }
+}
+
+.gold-btn {
+  padding: 20px;
+  width: 20%;
+  min-width: 200px;
+  color: #fff;
+  font-size: 1.5rem;
+  border: 2px solid $color-primary;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  display: block;
+  margin-top: 10rem;
+  // margin: 0 auto;
+  text-align: center;
+}
+
+.black-outline-btn {
+  padding: 15px;
+  width: 50%;
+  color: $color-secondary;
+  border: 2px solid  $color-secondary;
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  background: none;
+  display: block;
+  margin-top: 5rem;
+  border-radius: 5px;
+}

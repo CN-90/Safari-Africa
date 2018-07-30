@@ -1,0 +1,18 @@
+.tours {
+  margin-top: -12vh;
+  background-color: #141414;
+  padding: 15rem 0 25rem 0;
+  transform: skewY(-7deg);
+
+  & > * {
+    transform: skewY(7deg);
+  }
+
+  &__card-container {
+    width: 100%;
+  }
+
+  .header-secondary {
+    color: $color-primary;
+  }
+}

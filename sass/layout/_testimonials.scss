@@ -1,0 +1,31 @@
+.testimonials {
+  padding: 4rem 0 6rem 0;
+  width: 100%;
+  position: relative;
+  bottom: 11.5rem;
+  overflow: hidden;
+
+  .center-text {
+    position: relative;
+  }
+}
+
+#myVideo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+.gold-filter {
+  background: rgba(255, 217, 0, 0.815);
+  position: absolute;
+  right: 0;
+  top: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+

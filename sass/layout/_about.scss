@@ -1,0 +1,28 @@
+.about {
+  background-color: rgb(248, 218, 45);
+  padding: 17rem 0 25rem 0;
+  margin-top: -15vh;
+  
+
+  &__imgs-container {
+    display: flex;
+    margin-top: 5%;
+    height: 20%;
+    width: 100%;
+    background: black;
+  }
+
+  &__s-img-container {
+    height: 100%;
+    width: 100%;
+  }
+
+  &__cta {
+    font-size: 1.9rem;
+    color: black;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+}
+
