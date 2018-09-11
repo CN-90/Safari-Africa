@@ -140,7 +140,7 @@
   margin: 0 auto; }
 
 .header {
-  height: 95vh;
+  height: 100vh;
   background: linear-gradient(to left, rgba(177, 180, 5, 0.336), black), url("../img/lion.jpg");
   background-size: cover;
   background-position: center;
@@ -183,7 +183,7 @@
 .about {
   background-color: #f8da2d;
   padding: 17rem 0 25rem 0;
-  margin-top: -15vh; }
+  margin-top: -20vh; }
   .about__imgs-container {
     display: flex;
     margin-top: 5%;
@@ -243,7 +243,6 @@
   background: #141414;
   margin-top: -12rem; }
   .booking .book {
-    height: 50rem;
     width: 50%;
     background: linear-gradient(105deg, rgba(255, 215, 0, 0.9) 0%, rgba(255, 215, 0, 0.9) 50%, rgba(20, 20, 20, 0.6) 50%), url("../../img/safari-plains.jpeg");
     background-size: 100% 100%;
@@ -483,7 +482,7 @@ html {
 a {
   text-decoration: none; }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   html {
     font-size: 37%; }
   body {
@@ -536,8 +535,33 @@ a {
     flex-direction: column; }
     .flex-row-4 .col {
       margin: 0 auto; }
+  .booking .book {
+    width: 90%; }
   .flex-row-6 {
     flex-direction: column-reverse;
     width: 80%; }
     .flex-row-6 .col {
-      max-width: 100%; } }
+      max-width: 70%; } }
+
+@media (max-width: 1300px) {
+  .testimonials .story {
+    flex-direction: column;
+    transform: skewX(0deg);
+    width: 65%; }
+    .testimonials .story > * {
+      transform: skewX(0deg); }
+    .testimonials .story__text {
+      margin-left: 0rem;
+      text-align: center; }
+    .testimonials .story__img-container {
+      margin: 0 auto;
+      min-height: 104px;
+      min-width: 110px; }
+  .booking .book {
+    width: 80%; } }
+
+@media (max-width: 500px) {
+  .booking .book {
+    width: 100%; }
+  .black-outline-btn {
+    width: 100%; } }
