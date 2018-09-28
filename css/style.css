@@ -162,7 +162,6 @@
   position: relative;
   top: 25%;
   width: 100%;
-  display: inline-block;
   padding-left: 10%; }
   .header-primary--main {
     letter-spacing: 10px;
@@ -182,7 +181,7 @@
 
 .about {
   background-color: #f8da2d;
-  padding: 17rem 0 25rem 0;
+  padding: 25rem 0 30rem 0;
   margin-top: -20vh; }
   .about__imgs-container {
     display: flex;
@@ -258,8 +257,7 @@
         font-size: 1.5rem;
         font-family: inherit;
         padding: 1.5rem 2rem;
-        border-radius: 2px;
-        border-bottom: 3px solid transparent;
+        border-radius: 5px;
         width: 90%;
         display: block;
         color: inherit;
@@ -426,7 +424,7 @@
 .story {
   width: 50%;
   box-shadow: 0 1.3rem 7rem #635507;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin: 0 auto;
   display: flex;
   margin-top: 7rem;
@@ -434,9 +432,10 @@
   background: #141414e7;
   color: #ffffff;
   padding: 5rem;
-  transform: skewX(-12deg); }
+  border-radius: 10px;
+  transform: skewX(-5deg); }
   .story > * {
-    transform: skewX(12deg); }
+    transform: skewX(5deg); }
   .story__text {
     margin-left: 5rem;
     margin-top: 1rem; }
@@ -446,7 +445,7 @@
     max-height: 132px;
     max-width: 104px;
     border-radius: 50%;
-    border: 2px solid #e4ce0f; }
+    border: 2px solid #3d3d3d; }
     .story__img-container.one {
       background-image: url("../../img/review-img.jpeg");
       background-size: 100% 100%; }
@@ -456,8 +455,6 @@
     .story__img-container.three {
       background-image: url("../../img/review-two.jpg");
       background-size: 100% 100%; }
-    .story__img-container:hover {
-      transform: skewX(12deg) scale(1.1); }
   .story__img {
     width: 100%;
     height: 100%;
@@ -473,6 +470,7 @@ body {
   font-weight: 500;
   line-height: 1.7;
   padding: 30px;
+  background: #202020;
   box-sizing: border-box;
   overflow-x: hidden; }
 
@@ -482,14 +480,40 @@ html {
 a {
   text-decoration: none; }
 
+@media (max-width: 1300px) {
+  .flex-row-6 {
+    width: 80%; }
+  .testimonials .story {
+    flex-direction: column;
+    transform: skewX(0deg);
+    width: 65%; }
+    .testimonials .story > * {
+      transform: skewX(0deg); }
+    .testimonials .story__text {
+      margin-left: 0rem;
+      text-align: center; }
+    .testimonials .story__img-container {
+      margin: 0 auto;
+      min-height: 104px;
+      min-width: 110px; }
+  .booking .book {
+    width: 80%; } }
+
 @media (max-width: 1000px) {
   html {
-    font-size: 37%; }
+    font-size: 45%; }
   body {
     padding: 0px; }
-  .header .border-btn {
+  .btn-wrapper {
     margin: 0 auto;
-    width: 100%; }
+    text-align: center;
+    opacity: 0;
+    width: 70%; }
+  .header {
+    clip-path: none; }
+    .header .border-btn {
+      margin: 0 auto;
+      width: 100%; }
   .about__imgs-container {
     margin-bottom: 7rem; }
   .about__s-img-container {
@@ -497,7 +521,7 @@ a {
   .card {
     width: 225px; }
   .card__side {
-    height: 370px;
+    height: 345px;
     width: 225px; }
   .testimonials .story {
     flex-direction: column;
@@ -541,27 +565,42 @@ a {
     flex-direction: column-reverse;
     width: 80%; }
     .flex-row-6 .col {
-      max-width: 70%; } }
+      width: 70%; } }
 
-@media (max-width: 1300px) {
-  .testimonials .story {
-    flex-direction: column;
-    transform: skewX(0deg);
-    width: 65%; }
-    .testimonials .story > * {
-      transform: skewX(0deg); }
-    .testimonials .story__text {
-      margin-left: 0rem;
-      text-align: center; }
-    .testimonials .story__img-container {
-      margin: 0 auto;
-      min-height: 104px;
-      min-width: 110px; }
-  .booking .book {
-    width: 80%; } }
-
-@media (max-width: 500px) {
+@media (max-width: 700px) {
+  html {
+    font-size: 37%; }
+  .btn-wrapper {
+    margin: 0 auto;
+    text-align: center;
+    animation: moveInUp 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    width: auto; }
+  .flex-row-6 {
+    flex-direction: column-reverse;
+    width: 80%; }
+    .flex-row-6 .col {
+      width: 80%; }
+  .card__info {
+    font-size: 2rem; }
+  .card__side {
+    height: 370px; }
+  .story__review {
+    font-size: 2rem; }
+  .sub--heading--text {
+    font-size: 2rem;
+    width: 100%; }
+  .flex-row-6 {
+    width: 100%; }
   .booking .book {
     width: 100%; }
   .black-outline-btn {
     width: 100%; } }
+
+@media (max-width: 600px) {
+  .booking .book__form {
+    width: 56%; }
+  .black-outline-btn {
+    width: 78%; } }

@@ -22,6 +22,8 @@ body {
   font-weight: 500;
   line-height: 1.7;
   padding: 30px;
+  background: rgb(32, 32, 32);
+  // background: rgb(224, 210, 11);
   box-sizing: border-box;
   overflow-x: hidden;
 }
@@ -34,16 +36,59 @@ a {
   text-decoration: none;
 }
 
+@media (max-width: 1300px) {
+  .flex-row-6 {
+    width: 80%;
+  }
+
+  .testimonials {
+    .story {
+      flex-direction: column;
+      transform: skewX(0deg);
+      width: 65%;
+
+      & > * {
+        transform: skewX(0deg);
+      }
+
+      &__text {
+        margin-left: 0rem;
+        text-align: center;
+      }
+
+      &__img-container {
+        margin: 0 auto;
+        min-height: 104px;
+        min-width: 110px;
+      }
+    }
+  }
+
+  .booking .book {
+    width: 80%;
+  }
+}
+
+
 @media (max-width: 1000px) {
   html {
-    font-size: 37%;
+    font-size: 45%;
   }
 
   body {
     padding: 0px;
   }
 
+  .btn-wrapper {
+    margin: 0 auto;
+    text-align: center;
+    opacity: 0;
+    width: 70%; 
+  }
+
   .header {
+    clip-path: none;
+
     .border-btn {
       margin: 0 auto;
       width: 100%;
@@ -65,7 +110,7 @@ a {
   }
 
   .card__side {
-    height: 370px;
+    height: 345px;
     width: 225px;
   }
 
@@ -140,47 +185,74 @@ a {
     width: 80%;
 
     .col {
-      max-width: 70%;
+      width: 70%;
     }
   }
 }
 
-@media (max-width: 1300px) {
-  .testimonials {
-    .story {
-      flex-direction: column;
-      transform: skewX(0deg);
-      width: 65%;
+@media (max-width: 700px){
 
-      & > * {
-        transform: skewX(0deg);
-      }
-
-      &__text {
-        margin-left: 0rem;
-        text-align: center;
-      }
-
-      &__img-container {
-        margin: 0 auto;
-        min-height: 104px;
-        min-width: 110px;
-      }
-    }
+  html {
+    font-size: 37%;
   }
+  
+  .btn-wrapper {
+    margin: 0 auto;
+    text-align: center;
+    animation: moveInUp 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    width: auto;
+    }
 
-  .booking .book {
+  .flex-row-6 {
+    flex-direction: column-reverse;
     width: 80%;
-  }
-}
 
-@media (max-width: 500px) {
+    .col {
+      width: 80%;
+    }
+  }
+
+  .card__info {
+    font-size: 2rem;
+  }
+
+  .card__side {
+    height: 370px;
+  }
+
+  .story__review {
+    font-size: 2rem;
+  }
+  
+  .sub--heading--text {
+    font-size: 2rem;
+    width: 100%;
+  }
+
+  .flex-row-6 {
+    width: 100%;
+  }
+
   .booking .book {
     width: 100%;
   }
+
+
 
   .black-outline-btn {
     width: 100%;
   }
 }
 
+@media (max-width: 600px){
+  .booking .book__form {
+    width: 56%;
+  }
+
+  .black-outline-btn {
+    width: 78%;
+  }
+}
